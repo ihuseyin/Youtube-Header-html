@@ -1,0 +1,241 @@
+.header {
+  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(15, 15, 15);
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  font-size: 10px;
+  padding: 0px 16px 0px 16px;
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+}
+
+
+.header-start {
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 56px;
+  width: 169px;
+}
+
+.hamburger-menu-button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+  transition: background-color 0.15s;
+}
+
+.hamburger-menu-button:hover,
+.hamburger-menu-button:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hamburger-menu-button:hover:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header-center {
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 732px;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-box-container {
+  display: flex;
+  flex: 1;
+  padding: 0px 4px 0px 4px;
+  height: 40px;
+  margin-left: 40px;
+}
+
+.search-box {
+  background-color: rgb(18, 18, 18);
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding: 0px 4px 0px 16px;
+  margin-left: 32px;
+  border-radius: 40px 0px 0px 40px;
+  border-width: 1px 0px 1px 1px;
+  border-style: solid;
+  border-color: rgb(48, 48, 48);
+  cursor: text;
+  z-index: 1;
+}
+
+.search-box:focus-within {
+  border-radius: 40px 0px 0px 40px;
+  border: 1px solid rgb(28, 98, 185);
+}
+
+.search-box-input {
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  display: flex;
+  flex: 1;
+  padding: 1px 0px 1px 0px;
+  border: none;
+  outline: none;
+  cursor: text;
+  width: 0;
+}
+
+.search-button {
+  background-color: rgba(255, 255, 255, 0.08);
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 64px;
+  border: 1px solid rgb(48, 48, 48);
+  border-radius: 0px 40px 40px 0px;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.voice-search-button-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 0px;
+  border-radius: 50%;
+  margin-left: 12px;
+  box-sizing: border-box;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.voice-search-button-container:focus-within {
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid #ffffff;
+}
+
+.voice-search-button {
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  cursor: pointer;
+}
+
+
+.header-end {
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex: 0 0 auto;
+  min-width: 225px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.end-buttons {
+  background-color: rgba(0, 0, 0, 0);
+  display: inherit;
+  flex-direction: row;
+  align-items: center;
+}
+
+.settings-button-container {
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+.settings-button {
+  background-color: rgba(0, 0, 0, 0);
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.settings-button:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sign-in-button-shape {
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 18px;
+  padding: 0px 15px 0px 15px;
+  box-sizing: border-box;
+  text-decoration-line: none;
+  cursor: pointer;
+}
+
+.sign-in-button-shape:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.sign-in-button-shape:focus {
+  outline: none;
+  border: 2px solid #ffffff;
+  padding: 0px 14px 0px 14px;
+}
+
+.sign-in-button-shape:hover:focus {
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  padding: 0px 14px 0px 14px;
+}
+
+.sign-in-button-shape-text {
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.sign-in-shape-text {
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  margin: 0px;
+  padding: 0px;
+}
